@@ -35,7 +35,7 @@ app.delete('/RemoveQuote',async(req,res)=>{
     const deleted=await Quotes.deleteOne(req.body);
     res.send("quote removed!");
 })
-mongoose.connect('mongodb+srv://admin:root@cluster0.kwlzyeo.mongodb.net/qUotes?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect()
 .then(
 app.listen(3002,()=>{
     console.log("listening at 3002");
